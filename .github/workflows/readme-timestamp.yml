@@ -45,7 +45,6 @@ jobs:
           echo "Updated timestamp line to: $LINE"
 
       - name: Commit and push changes
-        if: steps.decide.outputs.run == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
