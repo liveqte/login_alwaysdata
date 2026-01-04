@@ -3,8 +3,8 @@ name: Login
 on:
   workflow_dispatch:
   
-  schedule:
-    - cron: '15 23 28 * *'
+  # schedule:
+  #   - cron: '15 23 28 * *'
 
 env:
   ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}
